@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise - Прогноз</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="../index.html" class="header__logo">
+                    <img src="../img/logo.png" alt="WeatherWise Логотип" width="40" height="40">
+                    <span>WeatherWise</span>
+                </a>
+
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="../index.html" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="forecast.html" class="nav__link nav__link--active">Прогноз</a>
+                        </li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">О проекте</a></li>
+                        <li class="nav__item"><a href="about.html#contact-form-anchor" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="city-selector">
+            <div class="container">
+                <h1 class="section-title">Выберите город для прогноза</h1>
+
+                <form action="#" class="city-form">
+                    <div class="city-form__group">
+                        <label for="city" class="city-form__label">Город:</label>
+                        <select id="city" class="city-form__select" name="city">
+                            <option value="">Симферополь</option>
+                            <option value="">Москва</option>
+                            <option value="">Санкт-Петербург</option>
+                            <option value="">Казань</option>
+                            <option value="">Екатеринбург</option>
+                            <option value="">Новосибирск</option>
+                            <option value="">Сочи</option>
+                            <option value="">Владивосток</option>
+                        </select>
+                        <button type="submit" class="city-form__button">Показать прогноз</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="current-weather">
+            <div class="container">
+                <h2 class="section-title">Текущая погода в Симферополе</h2>
+                <div class="weather-card">
+                    <div class="weather-card__icon">
+                        <img src="../img/sun.png" alt="Солнечно" width="80" height="80">
+                    </div>
+                    <div class="weather-card__info">
+                        <h3 class="weather-card__temp">+7°C</h3>
+                        <p class="weather-card__desc">Солнечно, ясно</p>
+                        <div class="weather-card__details">
+                            <p><b>Ветер:</b> 3 м/с, западный</p>
+                            <p><b>Влажность:</b> 65%</p>
+                            <p><b>Давление:</b> 760 мм рт. ст.</p>
+                            <p><b>Ощущается как:</b> +17°C</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="forecast-table">
+            <div class="container">
+                <h2 class="section-title">Прогноз на 7 дней</h2>
+                <table class="forecast__table">
+                    <tr>
+                        <th>День</th>
+                        <th>Температура</th>
+                        <th>Погода</th>
+                        <th>Ветер</th>
+                        <th>Влажность</th>
+                    </tr>
+                    <tr>
+                        <td>7 февраля</td>
+                        <td>+7°</td>
+                        <td><img src="../img/sun.png" alt="Солнечно" width="45" height="45"></td>
+                        <td>3 м/с</td>
+                        <td>65%</td>
+                    </tr>
+                    <tr>
+                        <td>8 февраля</td>
+                        <td>+1°</td>
+                        <td><img src="../img/cloudy.png" alt="Облачно" width="45" height="45"></td>
+                        <td>5 м/с</td>
+                        <td>70%</td>
+                    </tr>
+                    <tr>
+                        <td>9 февраля</td>
+                        <td>+4°</td>
+                        <td><img src="../img/rain.png" alt="Дождь" width="45" height="45"></td>
+                        <td>7 м/с</td>
+                        <td>85%</td>
+                    </tr>
+                    <tr>
+                        <td>10 февраля</td>
+                        <td>+5°</td>
+                        <td><img src="../img/snow.png" alt="Снег" width="45" height="45"></td>
+                        <td>4 м/с</td>
+                        <td>75%</td>
+                    </tr>
+                    <tr>
+                        <td>11 февраля</td>
+                        <td>+6°</td>
+                        <td><img src="../img/snow.png" alt="Солнечно" width="45" height="45"></td>
+                        <td>3 м/с</td>
+                        <td>60%</td>
+                    </tr>
+                    <tr>
+                        <td>12 февраля</td>
+                        <td>+6°</td>
+                        <td><img src="../img/sun.png" alt="Ясно" width="45" height="45"></td>
+                        <td>2 м/с</td>
+                        <td>55%</td>
+                    </tr>
+                    <tr>
+                        <td>13 февраля</td>
+                        <td>+6°</td>
+                        <td><img src="../img/sun.png" alt="Солнечно" width="45" height="45"></td>
+                        <td>3 м/с</td>
+                        <td>50%</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div class="weather-calendar">
+                <div class="weather-calendar-main">Погода на февраль 2026 года</div>
+                <div class="calendar-grid">
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">1 февраля</span>
+                            <span class="day-week">Вс</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/snow.png" alt="" class="weather-icon">
+                            <div class="weather-temp">-3°</div>
+                            <div class="weather-desk">Снег</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">2 февраля</span>
+                            <span class="day-week">Пн</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">-6°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">3 февраля</span>
+                            <span class="day-week">Вт</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">-6°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">4 февраля</span>
+                            <span class="day-week">Ср</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+2°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">5 февраля</span>
+                            <span class="day-week">Чт</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/rain.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+7°</div>
+                            <div class="weather-desk">Дождь</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">6 февраля</span>
+                            <span class="day-week">Пт</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/rain.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+9°</div>
+                            <div class="weather-desk">Дождь</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">7 февраля</span>
+                            <span class="day-week">Сб</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/rain.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+7°</div>
+                            <div class="weather-desk">Дождь</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">8 февраля</span>
+                            <span class="day-week">Вс</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+1°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">9 февраля</span>
+                            <span class="day-week">Пн</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/rain.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+4°</div>
+                            <div class="weather-desk">Дождь</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">10 февраля</span>
+                            <span class="day-week">Вт</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/rain.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+5°</div>
+                            <div class="weather-desk">Дождь</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">11 февраля</span>
+                            <span class="day-week">Ср</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+6°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">12 февраля</span>
+                            <span class="day-week">Чт</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/rain.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+6°</div>
+                            <div class="weather-desk">Дождь</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">13 февраля</span>
+                            <span class="day-week">Пт</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+6°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">14 февраля</span>
+                            <span class="day-week">Сб</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/rain.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+7°</div>
+                            <div class="weather-desk">Дождь</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">15 февраля</span>
+                            <span class="day-week">Вс</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+6°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">16 февраля</span>
+                            <span class="day-week">Пн</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+6°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">17 февраля</span>
+                            <span class="day-week">Чт</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/rain.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+5°</div>
+                            <div class="weather-desk">Дождь</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">18 февраля</span>
+                            <span class="day-week">Пт</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+6°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">19 февраля</span>
+                            <span class="day-week">Сб</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+6°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">20 февраля</span>
+                            <span class="day-week">Пн</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+6°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">21 февраля</span>
+                            <span class="day-week">Вт</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/rain.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+5°</div>
+                            <div class="weather-desk">Дождь</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">22 февраля</span>
+                            <span class="day-week">Ср</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/rain.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+5°</div>
+                            <div class="weather-desk">Дождь</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">23 февраля</span>
+                            <span class="day-week">Чт</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+4°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">24 февраля</span>
+                            <span class="day-week">Пт</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+6°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">25 февраля</span>
+                            <span class="day-week">Сб</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/rain.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+5°</div>
+                            <div class="weather-desk">Дождь</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">26 февраля</span>
+                            <span class="day-week">Вс</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+5°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">27 февраля</span>
+                            <span class="day-week">Ср</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+7°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-header">
+                            <span class="day-number">28 февраля</span>
+                            <span class="day-week">Чт</span>
+                        </div>
+                        <div class="day-weather">
+                            <img src="../img/sun.png" alt="" class="weather-icon">
+                            <div class="weather-temp">+6°</div>
+                            <div class="weather-desk">Солнечно</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <p class="footer__copyright">© 2026 WeatherWise. Все прогнозы носят ознакомительный характер.</p>
+                    <p class="footer__disclaimer">Данные обновляются каждые 3 часа с глобальных метеорологических
+                        серверов.</p>
+                </div>
+
+                <div class="footer__social">
+                    <a href="https://vk.com" class="social-link">
+                        <img src="../img/VK.png" alt="ВКонтакте" width="24" height="24">
+                    </a>
+                    <a href="https://telegram.org" class="social-link">
+                        <img src="../img/Telegram.png" alt="Telegram" width="24" height="24">
+                    </a>
+                </div>
+
+                <a href="#" class="footer__top-link">Наверх ↑</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="index.html" class="header__logo">
+                    <img src="img/logo.png" alt="WeatherWise Логотип" width="40" height="40">
+                    <span>WeatherWise</span>
+                </a>
+
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+                        <li class="nav__item"><a href="html/forecast.html" class="nav__link">Прогноз</a></li>
+                        <li class="nav__item"><a href="html/about.html" class="nav__link">О проекте</a></li>
+                        <li class="nav__item"><a href="html/about.html#contact-form-anchor" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="weather-search">
+            <div class="container">
+                <h1 class="weather-search__title">Точный прогноз погоды в вашем городе</h1>
+                <p class="weather-search__subtitle">Получайте актуальную информацию о погоде на ближайшие дни</p>
+
+                <form action="#" class="search-form">
+                    <div class="search-form__group">
+                        <input type="text" class="search-form__input" placeholder="Введите название города" required>
+                        <button type="submit" class="search-form__button">Найти</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="weather-phenomena">
+            <div class="container">
+                <h2 class="section-title">Возможные погодные являения</h2>
+                <div class="phenomena-grid">
+                    <div class="phenomenon-card">
+                        <img src="img/sun.png" alt="Солнечно" class="phenomenon-card__icon">
+                        <h3 class="phenomenon-card__title">Солнечно</h3>
+                        <p class="phenomenon-card__description">Антициклон приносит ясную погоду. Идеальный день для
+                            прогулок.</p>
+                    </div>
+
+                    <div class="phenomenon-card">
+                        <img src="img/cloudy.png" alt="Пасмурно" class="phenomenon-card__icon">
+                        <h3 class="phenomenon-card__title">Пасмурно</h3>
+                        <p class="phenomenon-card__description">Сплошная облачность. Освещённость снижена, осадки
+                            маловероятны.</p>
+                    </div>
+
+                    <div class="phenomenon-card">
+                        <img src="img/rain.png" alt="Дождь" class="phenomenon-card__icon">
+                        <h3 class="phenomenon-card__title">Дождь</h3>
+                        <p class="phenomenon-card__description">Атмосферный фронт приносит осадки. Рекомендуем взять
+                            зонт.</p>
+                    </div>
+
+                    <div class="phenomenon-card">
+                        <img src="img/wind.png" alt="Ветрено" class="phenomenon-card__icon">
+                        <h3 class="phenomenon-card__title">Ветрено</h3>
+                        <p class="phenomenon-card__description">Усиление ветра до 15 м/с. Будьте осторожны на открытой
+                            местности.</p>
+                    </div>
+
+                    <div class="phenomenon-card">
+                        <img src="img/snow.png" alt="Снег" class="phenomenon-card__icon">
+                        <h3 class="phenomenon-card__title">Снег</h3>
+                        <p class="phenomenon-card__description">Снежный покров. Поверхность выровнена. Температура ниже
+                            нуля.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="weather-map">
+            <div class="container">
+                <h2 class="section-title">Погода на карте</h2>
+                <div class="map-container">
+                    <div style="position:relative;overflow:hidden;"><a
+                            href="https://yandex.ru/maps/org/ledovy_dvorets_konsol_sport/7662067218/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a
+                            href="https://yandex.ru/maps/146/simferopol/category/sports_hall_gym/41430094175/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;"></a><a
+                            href="https://yandex.ru/maps/146/simferopol/category/sports_center/184107313/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:28px;"></a><iframe
+                            src="https://yandex.ru/map-widget/v1/?ll=34.101949%2C44.953174&mode=poi&poi%5Bpoint%5D=34.098376%2C44.961599&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D7662067218&z=14"
+                            width="1160" height="275" frameborder="1" allowfullscreen="true"
+                            style="position:relative;"></iframe></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <p class="footer__copyright">© 2026 WeatherWise. Все прогнозы носят ознакомительный характер.</p>
+                    <p class="footer__disclaimer">Данные обновляются каждые 3 часа с глобальных метеорологических
+                        серверов.</p>
+                </div>
+
+                <div class="footer__social">
+                    <a href="https://vk.com" class="social-link">
+                        <img src="img/VK.PNG" alt="ВКонтакте" width="24" height="24">
+                    </a>
+                    <a href="https://telegram.org" class="social-link">
+                        <img src="img/Telegram.png" alt="Telegram" width="24" height="24">
+                    </a>
+                </div>
+
+                <a href="#" class="footer__top-link">Наверх ↑</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

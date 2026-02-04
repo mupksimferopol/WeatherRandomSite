@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise - О проекте</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="../index.html" class="header__logo">
+                    <img src="../img/logo.png" alt="WeatherWise Логотип" width="40" height="40">
+                    <span>WeatherWise</span>
+                </a>
+
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="../index.html" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="forecast.html" class="nav__link">Прогноз</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link nav__link--active">О проекте</a>
+                        </li>
+                        <li class="nav__item"><a href="about.html#contact-form-anchor" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="about-content">
+            <div class="container">
+                <h1 class="section-title">О проекте WeatherWise</h1>
+
+                <div class="about-text">
+                    <p>WeatherWise — это современный метеорологический сервис, созданный с целью предоставления точных и
+                        понятных прогнозов погоды для пользователей по всей России.</p>
+
+                    <p>Наш проект объединяет в себе последние достижения в области метеорологии и современные технологии
+                        обработки данных. Мы используем информацию с глобальных метеорологических моделей, включая GFS
+                        (Global Forecast System) и ECMWF (European Centre for Medium-Range Weather Forecasts).</p>
+
+                    <h2>Как мы предсказываем погоду</h2>
+                    <h3>Мы применяем комплексный подход к прогнозированию:</h3>
+                    <ul>
+                        <li><b>Анализ спутниковых данных</b> — отслеживание движения облачных масс и атмосферных фронтов
+                        </li>
+                        <li><b>Обработка данных метеостанций</b> — информация с тысяч станций по всей стране</li>
+                        <li><b>Математическое моделирование</b> — расчёт атмосферных процессов с помощью
+                            суперкомпьютеров</li>
+                        <li><b>Локальная корректировка</b> — учёт особенностей рельефа и городской застройки</li>
+                    </ul>
+
+                    <h2>Наша миссия</h2>
+                    <p>Мы стремимся сделать прогнозы погоды не только точными, но и доступными для каждого. Наша цель —
+                        помочь людям планировать свой день, работу и отдых с учётом погодных условий.</p>
+
+                    <p>Точность наших краткосрочных прогнозов (на 24 часа) составляет <b>92%</b>, что превышает средние
+                        показатели по отрасли. Мы постоянно работаем над улучшением алгоритмов и расширением покрытия.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback-form" id="contact-form-anchor">
+            <div class="container">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <p class="form-description">Есть вопросы или предложения? Напишите нам!</p>
+
+                <form action="#" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Ваше имя:</label>
+                        <input type="text" id="name" class="form-input" placeholder="Введите ваше имя" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Ваш email:</label>
+                        <input type="email" id="email" class="form-input" placeholder="example@mail.ru" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Сообщение:</label>
+                        <textarea id="message" class="form-textarea" placeholder="Напишите ваше сообщение здесь..."
+                            rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="form-button">Отправить сообщение</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <p class="footer__copyright">© 2026 WeatherWise. Все прогнозы носят ознакомительный характер.</p>
+                    <p class="footer__disclaimer">Данные обновляются каждые 3 часа с глобальных метеорологических
+                        серверов.</p>
+                </div>
+
+                <div class="footer__social">
+                    <a href="https://vk.com" class="social-link">
+                        <img src="../img/VK.PNG" alt="ВКонтакте" width="24" height="24">
+                    </a>
+                    <a href="https://telegram.org" class="social-link">
+                        <img src="../img/Telegram.png" alt="Telegram" width="24" height="24">
+                    </a>
+                </div>
+
+                <a href="#" class="footer__top-link">Наверх ↑</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
